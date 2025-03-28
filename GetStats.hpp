@@ -40,7 +40,7 @@ public:
 
         int c = 0;
         while(temp != nullptr){
-            avg += temp->data;
+            *avg += temp->data;
             temp = temp->next;
             c++;
         }
