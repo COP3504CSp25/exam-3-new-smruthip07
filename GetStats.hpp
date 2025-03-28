@@ -49,9 +49,11 @@ public:
         *(arr[0]) = min;
         *(arr[1]) = max;
         *(arr[2]) = avg;
-    }
+
         int* x = arr[0];
         return x;
+    }
+        return nullptr;
 
     }
     
