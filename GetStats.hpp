@@ -14,7 +14,7 @@ public:
     }
 
     int* getStats() const{
-        //write your function here!
+        //write your function here
         int* arr[2];
         int min = 0;
         int max = 0;
