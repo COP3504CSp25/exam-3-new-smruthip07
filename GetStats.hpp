@@ -50,7 +50,7 @@ public:
         *(arr[2]) = avg;
 
         int* x = arr[0];
-        delete arr;
+        delete[] arr;
         return x;
     }
         return nullptr;
