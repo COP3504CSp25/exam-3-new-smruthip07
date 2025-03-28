@@ -23,16 +23,16 @@ public:
         Node* temp = head;
 
         while(temp != nullptr){
-            if(temp->data < min){
-                min = temp->data;
+            if(temp->data < *min){
+                *min = temp->data;
             }
             temp = temp->next;
         }
         temp = head;
 
         while(temp != nullptr){
-            if(temp->data > max){
-                max = temp->data;
+            if(temp->data > *max){
+                *max = temp->data;
             }
             temp = temp->next;
         }
