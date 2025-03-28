@@ -15,9 +15,9 @@ public:
 
     int* getStats() const{
         //write your function here
-        int arr[3];
-        int min = 0;
-        int max = 0;
+        int arr[3] = {0, 0, 0};
+        int min = head->data;
+        int max = head->data;
         int avg = 0;
 
         if(head != nullptr){
