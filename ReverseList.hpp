@@ -15,20 +15,20 @@ public:
     }
     
     LinkedList reverseList() const {
-        // implement your function here!
-        // LinkedList l;
-        // Node* temp = head;
+       // implement your function here!
+        LinkedList l;
+        Node* temp = head;
         
-        // if(temp == nullptr){
-        //     return l;
-        // }
+        if(temp == nullptr){
+            return l;
+        }
 
-        // while(temp!=nullptr){
-        //     l.addHead(temp->data);
-        //     temp = temp->next;
-        // }
+        while(temp!=nullptr){
+            l.addHead(temp->data);
+            temp = temp->next;
+        }
         
-        // return l;
+        return l;
         
     }
 

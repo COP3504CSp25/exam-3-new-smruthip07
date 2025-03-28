@@ -19,6 +19,8 @@ public:
         int min = 0;
         int max = 0;
         int avg = 0;
+
+        if(head != nullptr){
         Node* temp = head;
 
         while(temp != nullptr){
@@ -36,15 +38,17 @@ public:
             temp = temp->next;
         }
         temp = head;
-
+        int c = 0;
         while(temp != nullptr){
             avg += temp->data;
             temp = temp->next;
+            c++;
         }
-
+        avg = avg/c;
         arr[0] = &min;
         arr[1] = &max;
         arr[2] = &avg;
+    }
 
         return arr[0];
 
