@@ -50,8 +50,9 @@ public:
         *arr[1] = max;
         *arr[2] = avg;
     }
-
-        return arr[0];
+        int* x = arr[0];
+        delete arr;
+        return x;
 
     }
     
