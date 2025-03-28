@@ -16,10 +16,10 @@ public:
     int* getStats() const{
         //write your function here
     if(head != nullptr){
-        int* arr[2] = {new int[2]};
         int min = head->data;
         int max = head->data;
         int avg = 0;
+        int* arr[3] = {&min, &max, &avg};
         Node* temp = head;
 
         while(temp != nullptr){
@@ -49,9 +49,7 @@ public:
         *(arr[1]) = max;
         *(arr[2]) = avg;
 
-        int* x = arr[0];
-        delete[] arr;
-        return x;
+        return arr[0];
     }
         return nullptr;
 
