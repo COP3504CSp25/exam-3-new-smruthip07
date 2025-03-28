@@ -45,7 +45,7 @@ public:
         arr[1] = &max;
         arr[2] = &avg;
 
-        return &min;
+        return arr[0];
 
     }
     
