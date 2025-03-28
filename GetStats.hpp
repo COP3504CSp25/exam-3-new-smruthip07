@@ -39,6 +39,7 @@ public:
 
         while(temp != nullptr){
             avg += temp->data;
+            temp = temp->next;
         }
 
         arr[0] = &min;
