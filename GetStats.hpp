@@ -16,23 +16,23 @@ public:
     int* getStats() const{
         //write your function here
     if(head != nullptr){
-        int min = head->data;
-        int max = head->data;
-        int avg = 0;
-        int* arr[3] = {&min, &max, &avg};
+        int* min = new int(head->data);
+        int* max = new int(head->data);
+        int* avg = new int(0);
+        
         Node* temp = head;
 
         while(temp != nullptr){
-            if(temp->data < min){
-                min = temp->data;
+            if(temp->data < *min){
+                *min = temp->data;
             }
             temp = temp->next;
         }
         temp = head;
 
         while(temp != nullptr){
-            if(temp->data > max){
-                max = temp->data;
+            if(temp->data > *max){
+                *max = temp->data;
             }
             temp = temp->next;
         }
@@ -40,15 +40,14 @@ public:
 
         int c = 0;
         while(temp != nullptr){
-            avg += temp->data;
+            *avg += temp->data;
             temp = temp->next;
             c++;
         }
-        avg = avg/c;
-        *(arr[0]) = min;
-        *(arr[1]) = max;
-        *(arr[2]) = avg;
-
+        *avg = *avg/c;
+        
+        int* arr[3] = {min, max, avg};
+        
         return arr[0];
     }
         return nullptr;
