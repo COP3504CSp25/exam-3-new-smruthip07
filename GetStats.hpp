@@ -47,7 +47,9 @@ public:
         *avg = *avg/c;
         
         int* arr[3] = {min, max, avg};
-        
+        delete min;
+        delete max;
+        delete avg;
         return arr[0];
     }
         return nullptr;
