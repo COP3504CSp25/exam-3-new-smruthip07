@@ -16,9 +16,9 @@ public:
     int* getStats() const{
         //write your function here
     if(head != nullptr){
-        int min = head->data;
-        int max = head->data;
-        int avg = 0;
+        int* min = new int(head->data);
+        int* max = new int(head->data);
+        int* avg = new int(0);
         
         Node* temp = head;
 
@@ -44,19 +44,20 @@ public:
             temp = temp->next;
             c++;
         }
-        avg = avg/c;
-        int* min1 = new int(min);
-        int* max1 = new int(max);
-        int* avg1 = new int(avg);
-        int* arr[3] = {min1, max1, avg1};
-        delete min1;
-        delete max1;
-        delete avg1;
+        *avg = *avg/c;
+        // int* min1 = new int(min);
+        // int* max1 = new int(max);
+        // int* avg1 = new int(avg);
+        int* arr[3] = {min, max, avg};
+        delete min;
+        delete max;
+        delete avg;
         return arr[0];
     }
         return nullptr;
 
     }
+
     
 
 private:
