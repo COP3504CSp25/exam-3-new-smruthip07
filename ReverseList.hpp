@@ -17,6 +17,14 @@ public:
     LinkedList reverseList() const {
         // implement your function here!
         LinkedList l;
+        Node* temp = head;
+        int c = 0;
+
+        while(temp!=nullptr){
+            l.addHead(temp->data);
+        }
+        
+        return l;
         
     }
 

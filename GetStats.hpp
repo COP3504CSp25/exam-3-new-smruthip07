@@ -33,7 +33,7 @@ public:
             if(temp->data > max){
                 max = temp->data;
             }
-            temp = temp->next
+            temp = temp->next;
         }
         temp = head;
 
