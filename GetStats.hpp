@@ -15,12 +15,11 @@ public:
 
     int* getStats() const{
         //write your function here
+    if(head != nullptr){
         int* arr[2] = {new int[2]};
         int min = head->data;
         int max = head->data;
         int avg = 0;
-
-        if(head != nullptr){
         Node* temp = head;
 
         while(temp != nullptr){
