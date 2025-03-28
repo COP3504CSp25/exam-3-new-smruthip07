@@ -7,14 +7,14 @@
 
 float consultMax(const std::string& search_term, const std::map<std::string, std::vector<float>>& data) {
     //implement your function here
-    if(data.end() == data.find(search_term)){
-        return -1;
-    }
-    float avg;
-    for(auto x : data.at(search_term)){
-        avg += x;
-    }
-    return (avg/data.at(search_term).size());
+    // if(data.end() == data.find(search_term)){
+    //     return -1;
+    // }
+    // float avg;
+    // for(auto x : data.at(search_term)){
+    //     avg += x;
+    // }
+    // return (avg/data.at(search_term).size());
 }
 
 std::map<std::string, float> returnMaxMap(const std::map<std::string, std::vector<float>>& in_map) {
