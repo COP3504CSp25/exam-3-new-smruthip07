@@ -10,7 +10,7 @@ float consultMax(const std::string& search_term, const std::map<std::string, std
     if(data.end() == data.find(search_term)){
         return -1;
     }
-    float max;
+    float max = (data.at(search_term)).at(0);
     for(auto x : data.at(search_term)){
         if(max < x){
             max = x;
