@@ -8,7 +8,8 @@
 
 std::map<std::string, int> loadTrafficData(const std::string& filename) {
   //implement your function here!
-  //std::fstream file =  
+  //std::fstream file =  read("filename.csv");
+  
 }
 
 void updateTrafficData(const std::string& filename, std::map<std::string, int>& dataMap) {

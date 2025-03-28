@@ -20,7 +20,7 @@ public:
         Node* temp = head;
         
         if(temp == nullptr){
-            return;
+            return l;
         }
 
         while(temp!=nullptr){
