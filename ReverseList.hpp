@@ -18,7 +18,10 @@ public:
         // implement your function here!
         LinkedList l;
         Node* temp = head;
-        int c = 0;
+        
+        if(temp == nullptr){
+            return;
+        }
 
         while(temp!=nullptr){
             l.addHead(temp->data);
