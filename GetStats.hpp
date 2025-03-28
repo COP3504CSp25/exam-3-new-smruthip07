@@ -15,7 +15,7 @@ public:
 
     int* getStats() const{
         //write your function here
-        int arr[3] = {0, 0, 0};
+        int* arr[3] = {new int[3]};
         int min = head->data;
         int max = head->data;
         int avg = 0;
@@ -38,6 +38,7 @@ public:
             temp = temp->next;
         }
         temp = head;
+
         int c = 0;
         while(temp != nullptr){
             avg += temp->data;
@@ -45,12 +46,12 @@ public:
             c++;
         }
         avg = avg/c;
-        arr[0] = min;
-        arr[1] = max;
-        arr[2] = avg;
+        *arr[0] = min;
+        *arr[1] = max;
+        *arr[2] = avg;
     }
 
-        return &(arr[0]);
+        return arr[0];
 
     }
     
