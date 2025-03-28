@@ -25,6 +25,7 @@ public:
 
         while(temp!=nullptr){
             l.addHead(temp->data);
+            temp = temp->next;
         }
         
         return l;
